@@ -1,0 +1,30 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{booktabs}
+\usepackage{xcolor,colortbl}
+
+\begin{document}
+%Primera escala de colores
+\def\escala#1{%
+\ifdim#1pt<0pt\cellcolor{gray!50}\else
+\ifdim#1pt<100pt\cellcolor{yellow!50}\else
+\ifdim#1pt<200pt\cellcolor{yellow}\else
+\ifdim#1pt<300pt\cellcolor{orange}\else
+\ifdim#1pt<400pt\cellcolor{red!50}\else
+\ifdim#1pt>400pt\cellcolor{red}\else
+\cellcolor{white}\fi\fi\fi\fi\fi\fi
+#1}
+%Tabla
+\begin{table}
+ \centering
+ \caption{Precio de los Notebooks}
+  \begin{tabular}{lcc} \\ \toprule
+    & \multicolumn{2}{c}{Datos } \\ 
+    \cmidrule(r){2-3}
+    Marca & 2019 & 2020 \\ \midrule
+    \ \ A&\escala{-50}&\escala{50}  \\
+    \ \ B&\escala{150}&\escala{250} \\
+    \ \ C&\escala{350}&\escala{550} \\ \bottomrule
+  \end{tabular}
+\end{table}
+
+\end{document}
