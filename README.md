@@ -1,3 +1,4 @@
 # Tex-things
 
-Comenzaré a añadir algunos códigos sobre Latex. Cuadros, gráficos y 'cosas' relativamente útiles.
+##Tablas
+Contiene código relativo a creación de tablas en LaTeX. De momento hay un código para definir una escala de colores aplicable individualmente a cada celda de al tabla.
