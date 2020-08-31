@@ -1,9 +1,11 @@
 \documentclass[11pt,letterpaper]{article}
-\usepackage{booktabs}
 \usepackage{xcolor,colortbl}
+\usepackage{booktabs}
+\usepackage{float}
+
 
 \begin{document}
-%Primera escala de colores
+%Escala de colores
 \def\escala#1{%
 \ifdim#1pt<0pt\cellcolor{gray!50}\else
 \ifdim#1pt<100pt\cellcolor{yellow!50}\else
@@ -14,7 +16,7 @@
 \cellcolor{white}\fi\fi\fi\fi\fi\fi
 #1}
 %Tabla
-\begin{table}
+\begin{table}[H]
  \centering
  \caption{Precio de los Notebooks}
   \begin{tabular}{lcc} \\ \toprule
