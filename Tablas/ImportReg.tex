@@ -1,0 +1,24 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{lscape}
+\usepackage{float}
+%------------------------------------------------%
+
+\begin{document}
+
+  \begin{table}[H]
+    \centering
+    \caption{Regressions from Stata}
+    \begin{tabular}{lcc} \toprule
+      &\multicolumn{2}{c}{Outputs} \\ 
+      \cmidrule(r){2-3}
+      Price&(1)&(2) \\ \midrule
+      \input{regresiones.tex} 
+      \bottomrule
+      \multicolumn{3}{p{10cm}}{{Some text}}
+    \end{tabular}
+  \end{table}
+
+\end{document}
