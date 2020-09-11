@@ -3,8 +3,8 @@
 ## Tablas
 Contiene código relativo a creación de tablas en LaTeX:
 
-### Escala de Color (EscalaColor.tex)
-De momento hay un código para definir una escala de colores aplicable individualmente a cada celda de una tabla.
+### [Escala de Color](Tablas/EscalaColor.tex)
+Código para definir una escala de colores aplicable individualmente a cada celda de una tabla. Es útil, pero no es demasiado general, por lo cual se aplica en casos específicos.
 
 ### [Importar Regresión](Tablas/ImportReg.tex)
 Método para importar desde un archivo externo de LaTeX una regresión generada en Stata con el comando **esttab**, luego de haberla guardado en la memoria usando **eststo**.
