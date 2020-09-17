@@ -1,0 +1,14 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{graphicx} 
+\usepackage{pgffor}
+
+\begin{document}
+
+\section*{Importar imágenes con un loop}
+
+\foreach \i in {1,2,3} {%
+	\centering
+	\includegraphics[scale=1.5]{eps/image\i} \\
+}
+
+\end{document}
