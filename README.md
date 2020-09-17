@@ -12,7 +12,7 @@ El código fue tomando la idea que Damian Clarke me sugirió. El procedimiento e
 
 La utilidad de trabajar así es inmensa! simplemente podemos generar una tabla adecuada y con una linea de código 'llamar' las estimaciones en cada uno de nuestros proyectos.
 
-## Imágenes
+## Imagenes
 Contiene código relativo a la importación de imágenes:
 
 ### [Importar imágenes con un Loop](Imagenes/ImportLoop.tex)
