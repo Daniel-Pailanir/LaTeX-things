@@ -7,7 +7,7 @@ local i=1
 local var mpg weight gear_ratio
 foreach v of local var {
     twoway (scatter price `v')
-    graph export "$RUTA/eps/image`i'.eps", replace
+    graph export "$RUTA/eps/image`i'.png", replace
 	local ++i
 }
 graph drop _all
